@@ -1,7 +1,7 @@
 <div md-theme="{{dynamicTheme()}}" layout="column">
     <md-toolbar layout="row" layout-align="start center" layout-padding>
         <i class="material-icons"> local_play </i>
-        <span>Stage II - Tutor</span>
+        <span>Stage II - Tutoring system</span>
         <div flex layout="row" layout-align="end center">
             <label layout-margin layout-padding>Alex</label>
             <img ng-src="{{getAvatar()}}" class="profile" width="50px">
@@ -24,7 +24,7 @@
                     <!-- <md-progress-linear flex="10" md-mode="determinate" value="0"> </md-progress-linear> -->
                 </md-card>
                 <md-card layout-padding flex="40">
-                    <h3>Hits</h3>
+                    <h3>Correctly answered:</h3>
                     <div layout="row" layout-align="center center">
                         <h1 class="huge"> {{getLevel()}}</h1>
                     </div>
@@ -65,7 +65,7 @@
                     </md-card>
                 </div>
                 <div layout="column" layout-align="center center" layout-margin layout-padding>
-                    <md-button ng-click="hideAvatar()" class="md-primary md-raised">Very good! Continue.</md-button>
+                    <md-button ng-click="hideAvatar()" class="md-primary md-raised">Choose this avatar.</md-button>
                 </div>
             </md-card>
             <md-card layout="column" layout-align="center left " layout-padding ng-show="showQuestions">
@@ -79,7 +79,7 @@
                     <md-list layout="column " flex="20 " flex-offset="5 ">
                         <h3>Answer: </h3>
                         <md-button class="md-accent md-hue-3 " flex ng-repeat="item in items " ng-click="processAnswer($index) ">
-                            <h3>Letter {{item}}</h3>
+                            <h3>Option {{item}}</h3>
                         </md-button>
                     </md-list>
                 </div>
