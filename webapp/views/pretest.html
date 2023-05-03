@@ -6,7 +6,7 @@
                     <img src="assets/default/images/ufal.png">
                 </div>
                 <div layout="row" layout-align="center center">
-                    <label>Estudo sobre Ansiedade em Ambientes Educacionais Gamificados</label>
+                    <label>Study on Anxiety in Gamified Educational Environments</label>
                 </div>
                 <div layout="column" layout-align="end end">
                     <img src="assets/default/images/ic.png">
@@ -14,7 +14,7 @@
             </md-toolbar>
             <md-divider>
                 <md-card-content layout-padding layout-margin ng-show="!start">
-                    <label><b>Termo de Consentimento Livre e Esclarecido</b></label>
+                    <label><b>Terms of consent</b></label>
                     <br>
                     <p> Você está sendo convidado(a) a participar, como voluntário(a), de um estudo sobre ansiedade em ambientes educacionais gamificados, conduzido pelo estudante Josmário Albuquerque do curso de graduação em Ciência da Computação do Instituto de Computação da Universidade Federal de Alagoas. </p>
                     <p> Este estudo tem por objetivo medir o quanto um ambiente de aprendizagem gamificado pode influenciar a ansiedade de seus usuários. </p>
@@ -32,24 +32,24 @@
     <div layout="row" layout-align="center center" ng-show="start" class="bg">
         <md-card layout="column" layout-align="center center" flex="auto" width="50%">
             <md-card-title layout="column">
-                <h2>Etapa I - Questionário Inicial</h2>
-                <p>Responda as questões abaixo marcando as alternativas que mais se aproximam do estado em que você se encontra.</p>
+                <h2>Stage I - Initial Questionnaire</h2>
+                <p>Answer the questions below by ticking the option that is closest to the state you are in.</p>
             </md-card-title>
             <md-card-content>
                 <form>
                     <div layout="row">
                         <md-input-container class="md-block" flex-gt-sm>
-                            <label ng-required="true">Sexo</label>
+                            <label ng-required="true">Gender</label>
                             <md-select ng-required="true" ng-model="gender">
-                                <md-option ng-repeat="g in ['Masculino','Feminino', 'Prefiro não Responder']">
+                                <md-option ng-repeat="g in ['Male','Female', 'Divers','Prefer not to answer']">
                                     {{g}}
                                 </md-option>
                             </md-select>
                         </md-input-container>
                         <md-input-container class="md-block" flex-gt-sm>
-                            <label>Idade</label>
+                            <label>Age</label>
                             <md-select ng-model="age">
-                                <md-option ng-repeat="a in ['Menos de 18','18-24','25-34','35-44','45-54','Mais de 55']">
+                                <md-option ng-repeat="a in ['Younger than 18','18-24','25-34','35-44','45-54','Older than 55']">
                                     {{a}}
                                 </md-option>
                             </md-select>
@@ -58,7 +58,7 @@
                     <div ng-repeat="q in questions">
                         <h3>{{q}}</h3>
                         <div layout="row">
-                            <p>Absolutamente Não </p>
+                            <p>Absolutly not</p>
                             <md-radio-group ng-model="answers[$index]" layout="row" class="md-primary">
                                 <label>1</label>
                                 <md-radio-button value="1" aria-label="option 1"></md-radio-button>
@@ -69,13 +69,13 @@
                                 <label>4</label>
                                 <md-radio-button value="4" aria-label="option 4"></md-radio-button>
                             </md-radio-group>
-                            <p>Muitíssimo</p>
+                            <p>Very much</p>
                         </div>
                         </p>
                         </p>
                         <md-divider></md-divider>
                     </div>
-                    <md-button ng-click="processAnswers()" type="submit" class="md-raised md-primary">Próxima Etapa</md-button>
+                    <md-button ng-click="processAnswers()" type="submit" class="md-raised md-primary">Next stage</md-button>
                     <span>{{msg}}
                     </span>
                 </form>
