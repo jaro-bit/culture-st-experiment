@@ -1,2 +1,3 @@
 responseId;startTime;endTime;gender;age;testType;anxietyPre;activityPoints;anxietyPost;anxietyRawPre;anxietyRawPost
 d3f85f30-ee8e-11ed-a85b-857fb59fc4f1;1683653213121;1683653272718;Female;18-24;st_china;50;5;50;4,4,1,1,4,1,1,4,1,4,4,1,1,1,4,4,1,1,4,4;4,4,1,1,4,1,1,4,1,4,4,1,1,1,4,4,1,1,4,4
+0f9fe880-ee91-11ed-b366-01f9ed1d0391;1683654172398;1683654231764;Divers;18-24;st_mexico;50;5;50;4,3,1,2,4,1,1,4,1,4,4,1,1,1,4,4,1,1,4,4;4,4,1,1,4,1,1,4,1,4,4,1,1,1,4,4,1,1,4,4
