@@ -1,8 +1,8 @@
 angular.module('tutor').controller("PretestCtrl", function($scope, $window, $location, configService, User) {
 
-    var themes = ["st_brazil", "st_china", "st_england","st_germany","st_india","st_mexico","st_russia"];
+    var themes = ["default", "stFemale", "stMale"];
 
-    var random = Math.floor((Math.random() * 10000)) % 7;
+    var random = Math.floor((Math.random() * 10000)) % 3;
 
     $scope.questions = ["I feel calm", "I feel secure", "I am tense", "I feel strained", "I feel at ease", "I feel upset", "I am pressently worrying over possible misfortunes", "I feel satisfied", "I feel frightened", "I feel comfortable'", "I feel self-confident", "I feel nervous", "I am jittery", "I feel indecisive", "I am relaxed", "I am content", "I am worried", "I feel confused", "I feel steady", "I feel good"];
     $scope.answers = [];
