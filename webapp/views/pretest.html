@@ -14,19 +14,34 @@
             </md-toolbar>
             <md-divider>
                 <md-card-content layout-padding layout-margin ng-show="!start">
-                    <label><b>Terms of consent</b></label>
-                    <br>
-                    <p> Você está sendo convidado(a) a participar, como voluntário(a), de um estudo sobre ansiedade em ambientes educacionais gamificados, conduzido pelo estudante Josmário Albuquerque do curso de graduação em Ciência da Computação do Instituto de Computação da Universidade Federal de Alagoas. </p>
-                    <p> Este estudo tem por objetivo medir o quanto um ambiente de aprendizagem gamificado pode influenciar a ansiedade de seus usuários. </p>
-                    <p> Você foi selecionado(a) de forma arbitrária e sua participação não é obrigatória. A qualquer momento, você poderá desistir de participar deste estudo. Sua recusa, desistência ou retirada de consentimento não acarretará prejuízo. </p>
-                    <p>A princípio, este estudo não possui nenhum risco para seus participantes. No entanto, caso você sofra de algum transtorno de ansiedade, aconselha-se a não participar do mesmo. Além disso, em alguns momentos serão emitidos alguns sinais sonoros e, portanto, aconselha-se deixar o volume da saída de áudio em nível médio para evitar possíveis incidentes. </p>
-                    <p>O participante deste estudo não será remunerado em hipótese alguma. Além disso, a participação no mesmo não implica em nenhum gasto para os participantes. No entanto, não nos responsabilizamos por quaisquer problemas técnicos que possam vir a ocorrer durante a execução desta pesquisa.</p>
-                    <p> Sua participação nesta pesquisa consistirá em executar três atividades. Primeiro, será aplicado um questionário de ansiedade. Em seguida, você será direcionado(a) para uma outra página com o protótipo de um sistema tutor onde você responderá a perguntas básicas de raciocínio. Finalmente, você será direcionado(a) para a última página onde, novamente, responderá ao questionário de ansiedade. </p>
-                    <p>Durante a execução, somente suas respostas serão coletadas. Todo o processo tem duração aproximada de 10 minutos. Os dados obtidos por meio desta pesquisa serão confidenciais e não serão divulgados em nível individual, visando assegurar o sigilo de sua participação. O pesquisador responsável se comprometeu a tornar públicos nos meios acadêmicos e científicos os resultados obtidos de forma consolidada sem qualquer identificação de indivíduos participantes. </p>
-                    <p>A qualquer momento você poderá contactar o estudante responsável através do endereço eletrônico <a href="mailto:jas@ic.ufal.br?Subject=Estudo%20sobre%20Ansiedade" target="_top">jas@ic.ufal.br</a>, onde você poderá tirar suas dúvidas sobre o projeto e sobre sua participação nele.</p>
-                    <p> Caso você concorde em participar desta pesquisa, basta marcar o campo abaixo para prosseguir.</p>
-                    <md-checkbox ng-click="start=true; setTime()"><b>Declaro que entendi os objetivos, riscos e benefícios de minha participação na pesquisa, e que concordo em participar.</b></md-checkbox>
+                    <label><font size="+3"><big>Terms of consent</font></big></label>
+                    <p>You can contact our data protection officer via datenschutz@uni-stuttgart.de directly at any time with questions about data protection law or your data subject rights.</p>
+                    <big>1. Processing of personal data and purposes of processing</big><br />
+                    <p>a. Voluntarity</p>
+                    <p>Participation in this survey is voluntary. We want to point out that this is a scientific survey and that the data will be treated anonymously and in strict confidence. There is no risk by participating in this study. You are free to discontinue your participation at any time without incurring any disadvantage.</p>
+                    <p>b. Legal basis</p>
+                    <p>The legal basis of this study is built on the DSGVO and the Baden-Württemberg State Data Protection Act. The decision to participate in the survey is based on your consent Art. 6 Abs. 1 lit. a) DSGVO. The subsequent processing is based on Art. 6 Abs. 1 lit. e) in conjunction with Art. 6 Abs. 3 DSGVO and with § 13 Abs.1 of the Baden-Württemberg State Data Protection Act.</p>
+                    <p>c. Purpose, Research objective</p>
+                    <p>I am a student currently writing my bachelor thesis. For this purpose, this study is conducted. In general, this research tries to get greater insight into the inner workings of the interaction between humans and intelligent gamified tutoring systems. With your participation you directly help us with our research goal.</p>
+                    <big>2. Duration of storage</big><br />
+                    <p>Information you provide will be stored in full until the end of the evaluation period in October 2023. Anonymized data records will be archived permanently and made available for subsequent scientific use, including by third parties.</p>
+                    <big>3.   Confidentiality</big><br />
+                    <p>Personal data (age, gender, etc.) will be collected during participation. All data you provide in this study will be used exclusively in anonymized form for research purposes or publications and kept confidential in accordance with the European Union (EU) General Data Protection Regulation (GDPR), i.e. without the data being traceable to a specific person or company.</p>
+                    <p>Subsequent uses of records and data will be subject to standardized data use policies that protect the anonymity of individuals and institutions. In all cases, uses of records and data are subject to the GDPR. Your data will not be disclosed to third parties or used for for-profit purposes. </p>
+                    <big>4. Your rights</big><br />
+                    <p>You have the right to require the University of Stuttgart to inform you which personal data have been stored and/or to correct falsely stored data. </p>
+                    <ul>
+                    - Furthermore, you have the right to require the deletion of or the restriction of the use of your personal data as well as the right to object to their use.<br /> 
+                    - If the use of the data is based on your consent (which is the case for data provided voluntarily), you have the right to withdraw your consent at any time by informing us of this withdrawal. However, on the basis of your initial consent, the data can be used until such time as the withdrawal of your consent reaches us. <br />
+                    </ul>
+                    <p>In any of the above cases, please contact Janne Rotter via janne.rotter@gmail.com</p>
+                    <p>You have the right to submit a complaint to the regulating body if you are of the opinion that the processing of your personal data violates legal provisions. <br>
+                    The body responsible is the Commissioner for the Protection of Privacy and Freedom of Information Baden-Württemberg. </p>
+                    <big>5. Data security</big><br />
+                    <p>We use appropriate technical and organizational security measures to protect your data against accidental or intentional manipulation, partial or complete loss, destruction or against unauthorized access by third parties. Our security measures are continuously improved in line with technological developments.</p>
+                    <md-checkbox ng-click="start=true; setTime()"><b>I agree to this privacy statement regarding the usage of my data</b></md-checkbox>
                 </md-card-content>
+                <!-- <a href="mailto:jas@ic.ufal.br?Subject=Estudo%20sobre%20Ansiedade" target="_top">jas@ic.ufal.br</a> -->
         </md-card>
     </div>
     <div layout="row" layout-align="center center" ng-show="start" class="bg">
