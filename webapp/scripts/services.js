@@ -43,6 +43,8 @@ tutorServices.service("User", function($http) {
     var resp = {
         startTime: 0,
         endTime: 0,
+        education: "",
+        culture: "",
         gender: "",
         age: "",
         testType: "",
@@ -59,6 +61,14 @@ tutorServices.service("User", function($http) {
 
     this.setAge = function(value) {
         resp.age = value;
+    };
+
+    this.setCulture = function(value) {
+        resp.culture = value;
+    };
+
+    this.setEducation = function(value) {
+        resp.education = value;
     };
 
     this.setTestType = function(value) {
