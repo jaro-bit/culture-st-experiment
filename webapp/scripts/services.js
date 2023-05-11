@@ -95,6 +95,10 @@ tutorServices.service("User", function($http) {
         return resp.pretestPoints;
     };
 
+    this.getCulture = function(){
+        return resp.culture;
+    }
+
     this.setPre = function(value) {
         resp.pre = value;
     };
