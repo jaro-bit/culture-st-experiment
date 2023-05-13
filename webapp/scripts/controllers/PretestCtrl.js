@@ -60,12 +60,15 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
                 console.log('Brazil!')
                 var rDistance = Math.floor((Math.random() * 10000)) % 3;
                 if(rDistance == 0){
+                    User.setDistance("low")
                     //options China
                     random = 1
                 }else if(rDistance == 1){
+                    User.setDistance("medium")
                     //options China
                     random = 1
                 }else{
+                    User.setDistance("high")
                     //options China
                     random = 1
             }

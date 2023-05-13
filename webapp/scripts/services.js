@@ -49,6 +49,7 @@ tutorServices.service("User", function($http) {
         gender: "",
         identification: "",
         age: "",
+        distance: "",
         testType: "",
         pretestPoints: 0,
         activityPoints: 0,
@@ -75,6 +76,10 @@ tutorServices.service("User", function($http) {
 
     this.setIdentification = function(value) {
         resp.identification = value;
+    };
+
+    this.setDistance = function(value) {
+        resp.distance = value;
     };
 
     this.setTestType = function(value) {
