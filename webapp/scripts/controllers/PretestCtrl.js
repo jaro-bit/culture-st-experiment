@@ -57,7 +57,6 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
             console.log(userCulture)
 
             if(userCulture == 'Brazil'){
-                console.log('Brazil!')
                 var rDistance = Math.floor((Math.random() * 10000)) % 3;
                 if(rDistance == 0){
                     User.setDistance("low")
@@ -72,16 +71,96 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
                     //options China
                     random = 1
             }
+            }else if(userCulture == 'China'){
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    User.setDistance("low")
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    User.setDistance("medium")
+                    //options China
+                    random = 1
+                }else{
+                    User.setDistance("high")
+                    //options China
+                    random = 1
+                }
+            }else if(userCulture == 'United Kingdom'){
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    User.setDistance("low")
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    User.setDistance("medium")
+                    //options China
+                    random = 1
+                }else{
+                    User.setDistance("high")
+                    //options China
+                    random = 1
+                }
             }else if(userCulture == 'Germany'){
-
-            }else if(userCulture == 'Germany'){
-
-            }else if(userCulture == 'Germany'){
-
-            }else if(userCulture == 'Germany'){
-
-            }else if(userCulture == 'Germany'){
-
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    User.setDistance("low")
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    User.setDistance("medium")
+                    //options China
+                    random = 1
+                }else{
+                    User.setDistance("high")
+                    //options China
+                    random = 1
+                }
+            }else if(userCulture == 'India'){
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    User.setDistance("low")
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    User.setDistance("medium")
+                    //options China
+                    random = 1
+                }else{
+                    User.setDistance("high")
+                    //options China
+                    random = 1
+                }
+            }else if(userCulture == 'Mexico'){
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    User.setDistance("low")
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    User.setDistance("medium")
+                    //options China
+                    random = 1
+                }else{
+                    User.setDistance("high")
+                    //options China
+                    random = 1
+                }
+            }else if(userCulture == 'Russia'){
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    User.setDistance("low")
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    User.setDistance("medium")
+                    //options China
+                    random = 1
+                }else{
+                    User.setDistance("high")
+                    //options China
+                    random = 1
+                }
             }else{ //none of the predefined cultrues was chosen --> choose random culture
                 random = Math.floor((Math.random() * 10000)) % 7
             }
