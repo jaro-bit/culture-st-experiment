@@ -2,9 +2,9 @@ var tutorServices = angular.module("tutor.services", []);
 
 tutorServices.service("configService", function() {
 
-    var opts = ["default", "stMale", "stFemale"];
+    var opts = ["st_brazil", "st_china", "st_england","st_germany","st_india","st_mexico","st_russia"];
 
-    var random = Math.floor((Math.random() * 123457)) % 3;
+    var random = Math.floor((Math.random() * 123457)) % 7;
     var currentTheme = opts[random];
     // var currentTheme = "default";
 
@@ -46,6 +46,7 @@ tutorServices.service("User", function($http) {
         education: "",
         culture: "",
         gender: "",
+        identification: "",
         age: "",
         testType: "",
         pretestPoints: 0,
@@ -69,6 +70,10 @@ tutorServices.service("User", function($http) {
 
     this.setEducation = function(value) {
         resp.education = value;
+    };
+
+    this.setIdentification = function(value) {
+        resp.identification = value;
     };
 
     this.setTestType = function(value) {

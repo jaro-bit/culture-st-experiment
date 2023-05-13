@@ -4,6 +4,33 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
 
     var random = Math.floor((Math.random() * 10000)) % 7;
 
+    //dependend on user culture choose study enviroment
+    var userCulture = User.getCulture()
+
+    if(userCulture == 'Brazil'){
+        var rDistance = Math.floor((Math.random() * 10000)) % 3;
+        if(rDistance == 0){
+
+        }else if(rDistance == 1){
+
+        }else{
+            
+        }
+    }else if(userCulture == 'Germany'){
+
+    }else if(userCulture == 'Germany'){
+
+    }else if(userCulture == 'Germany'){
+
+    }else if(userCulture == 'Germany'){
+
+    }else if(userCulture == 'Germany'){
+
+    }else{
+        random = Math.floor((Math.random() * 10000)) % 7
+    }
+
+
     $scope.questions = ["I feel calm", "I feel secure", "I am tense", "I feel strained", "I feel at ease", "I feel upset", "I am pressently worrying over possible misfortunes", "I feel satisfied", "I feel frightened", "I feel comfortable", "I feel self-confident", "I feel nervous", "I am jittery", "I feel indecisive", "I am relaxed", "I am content", "I am worried", "I feel confused", "I feel steady", "I feel good"];
     $scope.answers = [];
 
