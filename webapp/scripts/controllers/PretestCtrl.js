@@ -4,32 +4,6 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
 
     var random = Math.floor((Math.random() * 10000)) % 7;
 
-    //dependend on user culture choose study enviroment
-    var userCulture = User.getCulture()
-
-    if(userCulture == 'Brazil'){
-        var rDistance = Math.floor((Math.random() * 10000)) % 3;
-        if(rDistance == 0){
-
-        }else if(rDistance == 1){
-
-        }else{
-            
-        }
-    }else if(userCulture == 'Germany'){
-
-    }else if(userCulture == 'Germany'){
-
-    }else if(userCulture == 'Germany'){
-
-    }else if(userCulture == 'Germany'){
-
-    }else if(userCulture == 'Germany'){
-
-    }else{
-        random = Math.floor((Math.random() * 10000)) % 7
-    }
-
 
     $scope.questions = ["I feel calm", "I feel secure", "I am tense", "I feel strained", "I feel at ease", "I feel upset", "I am pressently worrying over possible misfortunes", "I feel satisfied", "I feel frightened", "I feel comfortable", "I feel self-confident", "I feel nervous", "I am jittery", "I feel indecisive", "I am relaxed", "I am content", "I am worried", "I feel confused", "I feel steady", "I feel good"];
     $scope.answers = [];
@@ -70,12 +44,50 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
             console.log(ans);
             console.log("PRETEST: " + sum);
 
-            configService.setTheme(themes[random]);
+            
+            
             User.setGender($scope.gender);
             User.setAge($scope.age);
+            User.setCulture($scope.culture);
+            User.setEducation($scope.education);
+            User.setIdentification($scope.identification);
+
+            //dependend on user culture choose study enviroment
+            var userCulture = User.getCulture()
+            console.log(userCulture)
+
+            if(userCulture == 'Brazil'){
+                console.log('Brazil!')
+                var rDistance = Math.floor((Math.random() * 10000)) % 3;
+                if(rDistance == 0){
+                    //options China
+                    random = 1
+                }else if(rDistance == 1){
+                    //options China
+                    random = 1
+                }else{
+                    //options China
+                    random = 1
+            }
+            }else if(userCulture == 'Germany'){
+
+            }else if(userCulture == 'Germany'){
+
+            }else if(userCulture == 'Germany'){
+
+            }else if(userCulture == 'Germany'){
+
+            }else if(userCulture == 'Germany'){
+
+            }else{ //none of the predefined cultrues was chosen --> choose random culture
+                random = Math.floor((Math.random() * 10000)) % 7
+            }
+
+            configService.setTheme(themes[random]);
             User.setTestType(themes[random]);
             User.setPretestPoints(sum);
             User.setPre(ans);
+            console.log(themes[random])
 
             console.log(User.getResponse());
             // User.save();

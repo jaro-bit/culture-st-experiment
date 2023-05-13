@@ -8,6 +8,7 @@ tutorServices.service("configService", function() {
     var currentTheme = opts[random];
     // var currentTheme = "default";
 
+
     var next = false;
 
     var badgeFlags = [false, false, false];
