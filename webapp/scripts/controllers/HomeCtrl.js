@@ -16,30 +16,54 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
 
     var bgColor = "white";
 
-    var currentMessage = "Correto!"
+    var currentMessage = "Correct!"
     var flagMessage = false;
 
     var levelFiveFlag = true;
     var levelTenFlag = true;
 
+    //select names used for the enviroment
+    var names = [];
+    
+    var theme = configService.getTheme();
+
+    if(theme == 'st_brazil'){
+        names = ['brazil1','brazil2','brazil3','brazil4','brazil5'];
+    }else if(theme == 'st_china'){
+        names = ['china1','china2','china3','china4','china5'];
+    }else if(theme == 'st_england'){
+        names = ['england1','england2','england3','england4','england5'];
+    }else if(theme == 'st_germany'){
+        names = ['germany1','germany2','germany3','germany4','germany5'];
+    }else if(theme == 'st_india'){
+        names = ['india1','india2','india3','india4','indida5'];
+    }else if(theme == 'st_mexico'){
+        names = ['mexico1','mexico2','mexico3','mexico4','mexico5'];
+    }else if(theme == 'st_russia'){
+        names = ['russia1','russia2','russia3','russia4','russia5'];
+    }
+
+    console.log(names)
+
+
     var users = [{
-        name: "Alan",
+        name: names[0],
         points: 79,
         avatar: "assets/" + configService.getTheme() + "/images/ranking1.png"
     }, {
-        name: "Valentine",
+        name: names[1],
         points: 75,
         avatar: "assets/" + configService.getTheme() + "/images/ranking2.png"
     }, {
-        name: "Francis",
+        name: names[2],
         points: 63,
         avatar: "assets/" + configService.getTheme() + "/images/ranking3.png"
     }, {
-        name: "Danni",
+        name: names[3],
         points: 27,
         avatar: "assets/" + configService.getTheme() + "/images/ranking4.png"
     }, {
-        name: "Alex",
+        name: names[4],
         points: totalPoints,
         avatar: userAvatar
     }];
@@ -58,7 +82,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     $scope.showQuestions = false;
 
     $scope.getUserColor = function(name) {
-        if (name == "Alex")
+        if (name == names[4])
             return "#e0e0e0";
         return "white";
     };
@@ -257,23 +281,23 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
 
         //updates ranking
         users = [{
-            name: "Alan",
+            name: names[0],
             points: 79,
             avatar: "assets/" + configService.getTheme() + "/images/ranking1.png"
         }, {
-            name: "Valentine",
+            name: names[1],
             points: 75,
             avatar: "assets/" + configService.getTheme() + "/images/ranking2.png"
         }, {
-            name: "Francis",
+            name: names[2],
             points: 63,
             avatar: "assets/" + configService.getTheme() + "/images/ranking3.png"
         }, {
-            name: "Danni",
+            name: names[3],
             points: 27,
             avatar: "assets/" + configService.getTheme() + "/images/ranking4.png"
         }, {
-            name: "Alex",
+            name: names[4],
             points: totalPoints,
             avatar: userAvatar
         }];
