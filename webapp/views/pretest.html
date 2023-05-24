@@ -48,8 +48,8 @@
         <md-card layout="column" layout-align="center center" flex="auto" width="50%">
             <md-card-title layout="column">
                 <h2>Stage I - Initial Questionnaire</h2>
-                <p>Answer the questions below by ticking the option that is closest to the state you are in.</p>
-                <p>For the field "primary national culture" please choose the name of the nation to which culture you identify most closely</p>
+                <p>Please answer the following questiosn. For the field "primary national culture" please choose the name of the nation to which culture you identify most closely.</p>
+                <p>For the field "Degree of identification" please choose to which degree you identify yourself with the chosen culture</p>
             </md-card-title>
             <md-card-content>
                 <form>
@@ -95,6 +95,7 @@
                             </md-select>
                         </md-input-container>
                     </div>
+                    <p>Additionally please answer the questions below by marking the option that best suit your current psychological state.</p>
                     <div ng-repeat="q in questions">
                         <h3>{{q}}</h3>
                         <div layout="row">
