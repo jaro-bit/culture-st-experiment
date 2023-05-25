@@ -10,8 +10,8 @@
     <div layout="row" layout-align="left left">
         <div layout="column" layout-margin flex="30">
             <div layout="row" layout-align="space-between center" class="md-primary" flex="25">
-                <md-card layout-padding flex="40">
-                    <h3>Points</h3>
+                <md-card layout-padding flex="55">
+                    <h3>Points:</h3>
                     <div layout="row" layout-align="center center">
                         <h1 class="huge"> {{getPoints()}}</h1>
                     </div>
@@ -21,10 +21,10 @@
                     <div ng-if="decrement">
                         <h1 class="fail" layout-margin>-5</h1>
                     </div>
-                    <!-- <md-progress-linear flex="10" md-mode="determinate" value="0"> </md-progress-linear> -->
+                    <!---<md-progress-linear flex="10" md-mode="determinate" value="0"> </md-progress-linear> --->
                 </md-card>
-                <md-card layout-padding flex="40">
-                    <h3>Correctly answered:</h3>
+                <md-card layout-padding flex="55">
+                    <h3>Right answers:</h3>
                     <div layout="row" layout-align="center center">
                         <h1 class="huge"> {{getLevel()}}</h1>
                     </div>

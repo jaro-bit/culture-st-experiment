@@ -93,7 +93,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     $scope.hideAvatar = function() {
         $scope.showAvatar = false;
         $scope.showQuestions = true;
-        updatePoints(10);
+        //updatePoints(10);
     };
 
     $scope.getUsers = function() {
