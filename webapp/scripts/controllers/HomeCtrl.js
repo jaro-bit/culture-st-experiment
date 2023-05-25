@@ -81,6 +81,10 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
 
     $scope.showQuestions = false;
 
+    $scope.getName = function() {
+        return names[4];
+    }
+
     $scope.getUserColor = function(name) {
         if (name == names[4])
             return "#e0e0e0";
@@ -238,9 +242,9 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var setMsgType = function(type) {
 
         if (type == "red") {
-            currentMessage = "Resposta Errada!"
+            currentMessage = "Wrong answer!"
         } else {
-            currentMessage = "Resposta Certa!"
+            currentMessage = "Correct answer!"
         };
     };
 
