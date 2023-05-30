@@ -28,19 +28,19 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var theme = configService.getTheme();
 
     if(theme == 'st_brazil'){
-        names = ['brazil1','brazil2','brazil3','brazil4','brazil5'];
+        names = ['Maria','Jose','Joao','Ana','Antonio'];
     }else if(theme == 'st_china'){
-        names = ['china1','china2','china3','china4','china5'];
+        names = ['王伟祺','李徽因','张海云','刘念真','陈鸿涛'];
     }else if(theme == 'st_england'){
-        names = ['england1','england2','england3','england4','england5'];
+        names = ['Susan','David','Margaret','John','Michael'];
     }else if(theme == 'st_germany'){
-        names = ['germany1','germany2','germany3','germany4','germany5'];
+        names = ['Ursula','Peter','Wolfgang','Maria','Michael'];
     }else if(theme == 'st_india'){
-        names = ['india1','india2','india3','india4','indida5'];
+        names = ['मुहम्मद','सुनीता','अनीता','संजय','संतोष'];
     }else if(theme == 'st_mexico'){
-        names = ['mexico1','mexico2','mexico3','mexico4','mexico5'];
+        names = ['Jose','Juana','Rosa','Juan','Maria'];
     }else if(theme == 'st_russia'){
-        names = ['russia1','russia2','russia3','russia4','russia5'];
+        names = ['Елена','Татьяна','александр','Андрей','сергей'];
     }
 
     console.log(names)
