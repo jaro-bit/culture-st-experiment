@@ -22,6 +22,8 @@ tutorServices.service("configService", function() {
         return currentTheme;
     };
 
+
+
     this.setNext = function(value) {
         next = value;
     };

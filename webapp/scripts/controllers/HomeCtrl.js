@@ -127,6 +127,11 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
 
     };
 
+    $scope.getFlag = function() {
+        console.log("assets/" + configService.getTheme() + "/images/avatar1.png");
+        return "assets/" + configService.getTheme() + "/images/avatar1.png";
+    };
+
     $scope.checkSet1 = function() {
         return showSet1;
     };

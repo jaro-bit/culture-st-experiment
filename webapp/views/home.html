@@ -1,5 +1,17 @@
+<style>
+    .custom-toolbar {
+        background-image: url("{{getFlag()}}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Additional styling */
+        color: white; /* Set the text color */
+        padding: 20px; /* Adjust the padding as needed */
+    }
+</style>
+
 <div md-theme="{{dynamicTheme()}}" layout="column">
-    <md-toolbar layout="row" layout-align="start center" layout-padding>
+    <md-toolbar class="custom-toolbar" layout="row" layout-align="start center" layout-padding>
         <i class="material-icons"> local_play </i>
         <span>Tutoring system</span>
         <div flex layout="row" layout-align="end center">
