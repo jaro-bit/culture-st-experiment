@@ -10,6 +10,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var totalPoints = 0;
     var userAvatar = "assets/" + configService.getTheme() + "/images/avatar1.png";
     var level = 0;
+    var color = "white";
 
     var inc = false;
     var dec = false;
@@ -33,14 +34,17 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
         names = ['王伟祺','李徽因','张海云','刘念真','陈鸿涛'];
     }else if(theme == 'st_england'){
         names = ['Susan','David','Margaret','John','Michael'];
+        color = "black";
     }else if(theme == 'st_germany'){
         names = ['Ursula','Peter','Wolfgang','Maria','Michael'];
     }else if(theme == 'st_india'){
         names = ['मुहम्मद','सुनीता','अनीता','संजय','संतोष'];
+        color = "black";
     }else if(theme == 'st_mexico'){
         names = ['Jose','Juana','Rosa','Juan','Maria'];
     }else if(theme == 'st_russia'){
         names = ['Елена','Татьяна','александр','Андрей','сергей'];
+        color = "black";
     }
 
     console.log(names)
@@ -128,9 +132,14 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     };
 
     $scope.getFlag = function() {
-        console.log("assets/" + configService.getTheme() + "/images/avatar1.png");
-        return "assets/" + configService.getTheme() + "/images/avatar1.png";
+        console.log("assets/" + configService.getTheme() + "/images/flag.png");
+        return "assets/" + configService.getTheme() + "/images/flag.png";
     };
+
+    $scope.getTopbarTextcolor = function() {
+        console.log(color)
+        return color;
+    }
 
     $scope.checkSet1 = function() {
         return showSet1;
@@ -223,6 +232,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     $scope.dynamicTheme = function() {
         return configService.getTheme();
     };
+
     var setCurrent = function setCurrent(index) {
         userAnswer = $scope.items[index];
     };
