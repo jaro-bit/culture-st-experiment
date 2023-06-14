@@ -51,7 +51,8 @@
             </md-card-title>
             <md-card-content>
                 <p>For the following questions please choose what best fits you.</p>
-                <p>Note that for the field "primary national culture" you should choose the name of the nation to which culture you identify most closely.</p>
+                <p>Note that for the field "Primary national culture" you should choose the name of the nation to which culture you identify most closely.</p>
+                <p>For the field "Importance of national culture" please choose how important the previously chosen national culture is to you.</p>
                 <form>
                     <div layout="row">
                         <md-input-container class="md-block" flex-gt-sm>
@@ -73,7 +74,7 @@
                         <md-input-container class="md-block" flex-gt-sm>
                             <label ng-required="true">Education</label>
                             <md-select ng-required="true" ng-model="education">
-                                <md-option ng-repeat="e in ['Younger than 18','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','Older than 55']">
+                                <md-option ng-repeat="e in ['Primary or lower education','Lower secondary education (usually grades 7, 8, 9)','Upper secondary education (usually grades 10, 11, 12)','Bachelor or equivalent', 'Master or equivalent', 'Doctorate or equivalent']">
                                     {{e}}
                                 </md-option>
                             </md-select>

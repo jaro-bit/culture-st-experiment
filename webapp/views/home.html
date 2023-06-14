@@ -5,19 +5,27 @@
         background-position: center;
         background-repeat: no-repeat;
         /* Additional styling */
-        color: "'{{getTopbarTextcolor()}}'"; /* Set the text color */
+        color: '{{getTopbarTextcolor()}}'; /* Set the text color */
         padding: 20px; /* Adjust the padding as needed */
     }
 </style>
 
-<div md-theme="{{dynamicTheme()}}" layout="column">
-    <md-toolbar class="custom-toolbar" layout="row" layout-align="start center" layout-padding>
-        <i class="material-icons"> local_play </i>
+<!---<div md-theme="{{dynamicTheme()}}" layout="column"> --->
+<div md-theme="st_china" layout="column">
+    <md-toolbar class="custom-toolbar" layout="row" layout-align="start center" style="color:'{{getTopbarTextcolor()}}'" layout-padding>
+        <font color="{{getTopbarTextcolor()}}">
+        <!--<i class="material-icons"> local_play </i> -->
+        </font>
+        <font color="{{getTopbarTextcolor()}}">
         <span>Tutoring system</span>
+        </font>
         <div flex layout="row" layout-align="end center">
+            <font color="{{getTopbarTextcolor()}}"> 
             <label layout-margin layout-padding> {{getName()}} </label>
+            </font>
             <img ng-src="{{getAvatar()}}" class="profile" width="50px">
         </div>
+        
     </md-toolbar>
     <div layout="row" layout-align="left left">
         <div layout="column" layout-margin flex="30">
