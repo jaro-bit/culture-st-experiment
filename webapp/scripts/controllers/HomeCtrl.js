@@ -34,6 +34,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
         names = ['王伟祺','李徽因','张海云','刘念真','陈鸿涛'];
     }else if(theme == 'st_england'){
         names = ['Susan','David','Margaret','John','Michael'];
+        color = "#000000";
     }else if(theme == 'st_germany'){
         names = ['Ursula','Peter','Wolfgang','Maria','Michael'];
     }else if(theme == 'st_india'){
