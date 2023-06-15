@@ -20,7 +20,7 @@ app.post('/save-response', function(req, res, next){
   var respId = uuid.v1()
 
   //data to be saved (participant's response)
-  var row = [respId, req.body.startTime, req.body.endTime, req.body.gender, req.body.age, req.body.testType, req.body.pretestPoints, req.body.activityPoints, req.body.posttestPoints, req.body.pre, req.body.post].join(";")+"\n"
+  var row = [respId, req.body.startTime, req.body.endTime, req.body.education, req.body.culture, req.body.gender, req.body.identification, req.body.age, req.body.distance, req.body.testType, req.body.pretestPoints, req.body.activityPoints, req.body.posttestPoints, req.body.pre, req.body.post].join(";")+"\n"
 
   fs.stat('responses.csv', function (err, stat) {
       if (err == null) {
@@ -33,7 +33,7 @@ app.post('/save-response', function(req, res, next){
       else {
           //write the headers and newline
           console.log('First answer, adding headers');
-          var headers= ["responseId", "startTime","endTime","gender","age","testType","anxietyPre","activityPoints","anxietyPost","anxietyRawPre","anxietyRawPost"].join(";") + "\n" + row
+          var headers= ["responseId", "startTime","endTime","education","culture","gender","identifiication","age","distance","testType","anxietyPre","activityPoints","anxietyPost","anxietyRawPre","anxietyRawPost"].join(";") + "\n" + row
 
           fs.writeFile('responses.csv', headers, function (err) {
               if (err) throw err;

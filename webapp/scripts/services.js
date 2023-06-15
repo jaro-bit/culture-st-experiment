@@ -131,10 +131,11 @@ tutorServices.service("User", function($http) {
     this.save = function() {
         $http({
             url: "http://localhost:8080/save-response",
-            dataType: "json",
+            dataType: "csv",
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Custom-Header": JSON.stringify(resp)
             },
             data: resp
         }).then(function(response) {
