@@ -51,7 +51,7 @@
                 </md-card>
             </div>
             <md-content>
-                <md-list layout-padding>
+                <!--<md-list layout-padding>
                     <h3>Ranking</h3>
                     <md-list-item ng-repeat="a in getUsers()" layout-align="left center" layout-margin class="list-item" style="background-color: {{getUserColor(a.name)}}">
                         <div flex="40" layout="row" layout-align="left center">
@@ -64,7 +64,21 @@
                             <label class="small" layout-margin>{{getUserPoints($index)}}</label>
                         </div>
                     </md-list-item>
-                </md-list>
+                </md-list> -->
+                <md-list layout-padding>
+                    <h3>Ranking</h3>
+                    <md-list-item ng-repeat="a in getUsers()" layout-align="left center" layout-margin class="list-item" style="background-color: {{getUserColor(a.name)}}">
+                      <div flex="40" layout="row" layout-align="start center">
+                        <label class="small" layout-padding>{{$index+1}}.</label>
+                        <img class="rounded" flex="30" ng-src="{{a.avatar}}">
+                        <label flex="50" class="small" layout-padding>{{a.name}}</label>
+                      </div>
+                      <div flex="60" layout="row" layout-align="start center">
+                        <img ng-src="{{getBar()}}" ng-repeat="z in getNumber(a.points) track by $index">
+                        <label class="small" layout-margin>{{getUserPoints($index)}}</label>
+                      </div>
+                    </md-list-item>
+                  </md-list>                  
             </md-content>
         </div>
         <div layout="column" flex="50" layout-margin layout-padding>

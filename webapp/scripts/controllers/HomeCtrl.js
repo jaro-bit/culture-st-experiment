@@ -33,17 +33,17 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     }else if(theme == 'st_china'){
         names = ['王伟祺','李徽因','张海云','刘念真','陈鸿涛'];
     }else if(theme == 'st_england'){
-        names = ['Susan','David','Margaret','John','Michael'];
+        names = ['Susan','David','Mary','John','James'];
         color = "#000000";
     }else if(theme == 'st_germany'){
-        names = ['Ursula','Peter','Wolfgang','Maria','Michael'];
+        names = ['Ursula','Peter','Werner','Maria','Hans'];
     }else if(theme == 'st_india'){
         names = ['मुहम्मद','सुनीता','अनीता','संजय','संतोष'];
         color = "#000000";
     }else if(theme == 'st_mexico'){
         names = ['Jose','Juana','Rosa','Juan','Maria'];
     }else if(theme == 'st_russia'){
-        names = ['Елена','Татьяна','александр','Андрей','сергей'];
+        names = ['Сергей','Елена','Ольга','Ирина','Иван']; 
     }
 
     console.log(names)
