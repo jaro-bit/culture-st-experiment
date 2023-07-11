@@ -8,7 +8,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var currentQuestion = 0;
     var showSet1 = true;
     var totalPoints = 0;
-    var userAvatar = "assets/" + configService.getTheme() + "/images/avatar1.png";
+    var userAvatar = "assets/" + configService.getTheme() + "/images/avatar1.jpg";
     var level = 0;
     var color = "white";
 
@@ -52,19 +52,19 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var users = [{
         name: names[0],
         points: 79,
-        avatar: "assets/" + configService.getTheme() + "/images/ranking1.png"
+        avatar: "assets/" + configService.getTheme() + "/images/ranking1.jpg"
     }, {
         name: names[1],
         points: 75,
-        avatar: "assets/" + configService.getTheme() + "/images/ranking2.png"
+        avatar: "assets/" + configService.getTheme() + "/images/ranking2.jpg"
     }, {
         name: names[2],
         points: 63,
-        avatar: "assets/" + configService.getTheme() + "/images/ranking3.png"
+        avatar: "assets/" + configService.getTheme() + "/images/ranking3.jpg"
     }, {
         name: names[3],
         points: 27,
-        avatar: "assets/" + configService.getTheme() + "/images/ranking4.png"
+        avatar: "assets/" + configService.getTheme() + "/images/ranking4.jpg"
     }, {
         name: names[4],
         points: totalPoints,
@@ -108,7 +108,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     };
 
     $scope.getImage = function(value) {
-        return "assets/" + configService.getTheme() + "/images/avatar" + value + ".png";
+        return "assets/" + configService.getTheme() + "/images/avatar" + value + ".jpg";
     };
 
     $scope.setAvatar = function(value) {
@@ -301,19 +301,19 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
         users = [{
             name: names[0],
             points: 79,
-            avatar: "assets/" + configService.getTheme() + "/images/ranking1.png"
+            avatar: "assets/" + configService.getTheme() + "/images/ranking1.jpg"
         }, {
             name: names[1],
             points: 75,
-            avatar: "assets/" + configService.getTheme() + "/images/ranking2.png"
+            avatar: "assets/" + configService.getTheme() + "/images/ranking2.jpg"
         }, {
             name: names[2],
             points: 63,
-            avatar: "assets/" + configService.getTheme() + "/images/ranking3.png"
+            avatar: "assets/" + configService.getTheme() + "/images/ranking3.jpg"
         }, {
             name: names[3],
             points: 27,
-            avatar: "assets/" + configService.getTheme() + "/images/ranking4.png"
+            avatar: "assets/" + configService.getTheme() + "/images/ranking4.jpg"
         }, {
             name: names[4],
             points: totalPoints,
@@ -433,7 +433,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
         currentQuestion++;
         $scope.progress = 100 * (currentQuestion + 1) / 20;
         $scope.question = function() {
-            return "assets/" + configService.getTheme() + "/images/q-" + currentQuestion + ".png";
+            return "assets/" + configService.getTheme() + "/images/q-" + currentQuestion + ".jpg";
         };
 
         if (currentQuestion >= 20) {

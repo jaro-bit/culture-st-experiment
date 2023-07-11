@@ -261,7 +261,7 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
                     }
                 }
             }else if(userCulture == 'Albania'){
-                random = 6
+                random = 0
             }else{ //none of the predefined cultrues was chosen --> choose random culture
                 random = Math.floor((Math.random() * 10000)) % 7
             }
