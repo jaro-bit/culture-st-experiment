@@ -433,7 +433,7 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
         currentQuestion++;
         $scope.progress = 100 * (currentQuestion + 1) / 20;
         $scope.question = function() {
-            return "assets/" + configService.getTheme() + "/images/q-" + currentQuestion + ".jpg";
+            return "assets/" + configService.getTheme() + "/images/q-" + currentQuestion + ".png";
         };
 
         if (currentQuestion >= 20) {
