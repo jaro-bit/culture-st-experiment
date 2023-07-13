@@ -39,12 +39,12 @@
                     The body responsible is the Commissioner for the Protection of Privacy and Freedom of Information Baden-Württemberg. </p>
                     <big>5. Data security</big><br />
                     <p>We use appropriate technical and organizational security measures to protect your data against accidental or intentional manipulation, partial or complete loss, destruction or against unauthorized access by third parties. Our security measures are continuously improved in line with technological developments.</p>
-                    <md-checkbox ng-click="start=true; setTime()"><b>I agree to this privacy statement regarding the usage of my data</b></md-checkbox>
+                    <md-checkbox ng-click="start=true;"><b>I agree to this privacy statement regarding the usage of my data</b></md-checkbox>
                 </md-card-content>
                 <!-- <a href="mailto:jas@ic.ufal.br?Subject=Estudo%20sobre%20Ansiedade" target="_top">jas@ic.ufal.br</a> -->
         </md-card>
     </div>
-    <div layout="row" layout-align="center center" ng-show="start" class="bg">
+    <div layout="row" layout-align="center center" ng-show="start && !start2" class="bg">
         <md-card layout="column" layout-align="center center" flex="auto" width="50%">
             <md-card-title layout="column">
                 <h2>Demographics</h2>
@@ -54,7 +54,7 @@
                 <p>Note that for the field "Primary national culture" you should choose the name of the nation to which culture you identify most closely.</p>
                 <p>For the field "Identification with national culture" please choose how strong you identify with this national culture.</p>
                 <form>
-                    <div layout="row">
+                    <div layout="column">
                         <md-input-container class="md-block" flex-gt-sm>
                             <label ng-required="true">Gender</label>
                             <md-select ng-required="true" ng-model="gender">
@@ -96,31 +96,14 @@
                             </md-select>
                         </md-input-container>
                     </div>
-                    <!--
-                    <p>Additonally please answer how imporant the national culture you chose is to you.</p>
-                    <h3>{{i}}</h3>
-                    <div layout="row">
-                        <p>Not at all important to me</p>
-                        <md-radio-group ng-model="identification" layout="row" class="md-primary">
-                            <label>1</label>
-                            <md-radio-button value="1" aria-label="option 1"></md-radio-button>
-                            <label>2</label>
-                            <md-radio-button value="2" aria-label="option 2"></md-radio-button>
-                            <label>3</label>
-                            <md-radio-button value="3" aria-label="option 3"></md-radio-button>
-                            <label>4</label>
-                            <md-radio-button value="4" aria-label="option 4"></md-radio-button>
-                            <label>5</label>
-                            <md-radio-button value="5" aria-label="option 5"></md-radio-button>
-                            </md-radio-group>
-                            <p>Very important to me</p>
-                    </div>
-                    --->
                 </form>
+            <md-checkbox ng-click="start2=true; setTime()"><b>Continue</b></md-checkbox>
+            <h1 style="color: azure">.</h1>
+            <h1 style="color: azure">.</h1>
             </md-card-content>
         </md-card>
     </div>
-    <div layout="row" layout-align="center center" ng-show="start" class="bg">
+    <div layout="row" layout-align="center center" ng-show="start2" class="bg">
         <md-card layout="column" layout-align="center center" flex="auto" width="50%">
             <md-card-title layout="column">
                 <h2>Initial Questionnaire</h2>
