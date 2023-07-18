@@ -110,7 +110,7 @@
                 <label layout-margin><b>Question {{getQuestion()}}/20</b></label>
                 <div layout="row ">
                     <img src="{{question()}} " flex="75">
-                    <md-list layout="column " flex="20 " flex-offset="5 ">
+                    <md-list layout="column" flex="20 " flex-offset="5 ">
                         <h3>Answer: </h3>
                         <md-button class="md-accent md-hue-3 " flex ng-repeat="item in items " ng-click="processAnswer($index) ">
                             <h3>Option {{item}}</h3>
