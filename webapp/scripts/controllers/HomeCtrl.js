@@ -29,21 +29,21 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var theme = configService.getTheme();
 
     if(theme == 'st_brazil'){
-        names = ['Maria','Jose','Joao','Ana','Antonio'];
+        names = ['Jose','Joao','Ana','Antonia','Maria'];
     }else if(theme == 'st_china'){
         names = ['王伟祺','李徽因','张海云','刘念真','陈鸿涛'];
     }else if(theme == 'st_england'){
-        names = ['Susan','David','Mary','John','James'];
+        names = ['Susan','Sarah','John','Paul','David'];
         color = "#000000";
     }else if(theme == 'st_germany'){
-        names = ['Ursula','Peter','Werner','Maria','Hans'];
+        names = ['Ursula','Werner','Maria','Klaus','Peter'];
     }else if(theme == 'st_india'){
         names = ['मुहम्मद','सुनीता','अनीता','संजय','संतोष'];
         color = "#000000";
     }else if(theme == 'st_mexico'){
-        names = ['Jose','Juana','Rosa','Juan','Maria'];
+        names = ['Jose','Ana','Rosa','Juan','Maria'];
     }else if(theme == 'st_russia'){
-        names = ['Сергей','Елена','Ольга','Ирина','Иван']; 
+        names = ['Елена','Ольга','Ирина','Иван','Сергей']; 
     }
 
     console.log(names)
