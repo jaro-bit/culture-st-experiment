@@ -74,7 +74,7 @@
                         <md-input-container class="md-block" flex-gt-sm>
                             <label ng-required="true">Educational level</label>
                             <md-select ng-required="true" ng-model="education">
-                                <md-option ng-repeat="e in ['Primary or lower education','Lower secondary education (usually grades 7, 8, 9)','Upper secondary education (usually grades 10, 11, 12)','Bachelor or equivalent', 'Master or equivalent', 'Doctorate or equivalent']">
+                                <md-option ng-repeat="e in ['Primary or lower education','Lower secondary education (usually grades 7, 8, 9)','Upper secondary education (usually grades 10, 11, 12)','Bachelor or equivalent', 'Master or equivalent', 'Doctorate or equivalent', 'Different']">
                                     {{e}}
                                 </md-option>
                             </md-select>
@@ -97,7 +97,7 @@
                         </md-input-container>
                     </div>
                 </form>
-            <md-checkbox ng-click="start2=true; setTime()"><b>Continue</b></md-checkbox>
+            <md-checkbox ng-click="start2=true; setTime()" ng-disabled="!(gender && age && education && culture && identification)"><b>Continue</b></md-checkbox>
             <h1 style="color: azure">.</h1>
             <h1 style="color: azure">.</h1>
             </md-card-content>

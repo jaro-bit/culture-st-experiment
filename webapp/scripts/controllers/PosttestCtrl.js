@@ -5,7 +5,7 @@ angular.module('tutor').controller("PosttestCtrl", function($scope, $location, U
 
     $scope.processAnswers = function() {
 
-        if ($scope.answers.length < 20) {
+        if ($scope.answers.includes(undefined)) {
             $scope.msg = "Please answer all questions!"
         } else {
 

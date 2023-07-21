@@ -14,10 +14,7 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
     };
 
     $scope.processAnswers = function() {
-
-        //console.log($scope.answers);
-        //  validation
-        if ($scope.answers.length < 20) {
+        if ($scope.answers.includes(undefined)) {
             $scope.msg = "Please answer all questions!"
         } else {
             function add(a, b) {
