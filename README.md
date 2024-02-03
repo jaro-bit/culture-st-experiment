@@ -1,31 +1,16 @@
-## Gender stereotypes, student anxiety, and gamification
+## Culture stereotypes, student anxiety, and gamification
 
 
-This repository contains the code for the experiment described in the article, "[Does gender stereotype threat in gamified educational environments cause anxiety? An experimental study](https://www.sciencedirect.com/science/article/abs/pii/S0360131517301914)."
+This repository contains the code for the experiment described in the article, "[Investigating Culture-Induced Stereotype Threat in an Intelligent and Gamified Tutoring System]."
 
-### How to cite
-* Albuquerque, J., Bittencourt, I. I., Coelho, J. A., & Silva, A. P. (2017). Does gender stereotype threat in gamified educational environments cause anxiety? An experimental study. Computers & Education, 115, 161-170.
-* Bibtex:
-```
-@article{albuquerque2017does,
-	title = "Does gender stereotype threat in gamified educational environments cause anxiety? An experimental study",
-	journal = "Computers & Education",
-	volume = "115",
-	pages = "161 - 170",
-	year = "2017",
-	issn = "0360-1315",
-	doi = "https://doi.org/10.1016/j.compedu.2017.08.005",
-	url = "http://www.sciencedirect.com/science/article/pii/S0360131517301914",
-	author = "Josmario Albuquerque and Ig I. Bittencourt and Jorge A.P.M. Coelho and Alan P. Silva",
-	keywords = "Gender studies, Anxiety, Stereotype threat, Gamification in education",
-}
-```
+## Credit
+This repository is forked from the repository [gender-st-experiment](https://github.com/rgalhos/gender-st-experiment) by Albuquerque et al.
 
 ## Overview
-This project comprises an experimental environment to study the impact of gender stereotype threat on student anxiety. In summary, the application has the following workflow:
+This project comprises an experimental environment to study the impact of culture-induced stereotype threat on student anxiety and performance. In summary, the application has the following workflow:
 1. Consent form
 2. Pre-test (anxiety assessment)
-3. Gamified activity. There are three different design flavours for this activity: male-stereotyped, female-stereotyped, and neutral. Upon finishing the pre-test, one of the three flavours is randomly selected for the current participant. Please note the activity content does not change across versions (only UI elements like colours and images).
+3. Gamified activity. There are seven different design flavours for this activity: German, Great British, Russian, Chinese, Mexican, Indian and Brazilian . Upon finishing the pre-test, one of the seven flavours is selected for the current participant. For more details please refer the paper itself. Please note the activity content does not change across versions (only UI elements like colours, images and names).
 4. Post-test (anxiety assessment, same as the pre-test).
 
 
