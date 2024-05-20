@@ -1,7 +1,7 @@
 ## Cultural stereotypes, student anxiety, and gamification
 
 
-This repository contains the code for the experiment described in the article, "[Investigating Culture-Induced Stereotype Threat in an Intelligent and Gamified Tutoring System]" and is based on the framework provided by [Albuquerque et al., 2020](https://github.com/rgalhos/gender-st-experiment).
+This repository contains the code for the experiment described in the article, "Investigating Culture-Induced Stereotype Threat in an Intelligent and Gamified Tutoring System" and is based on the framework provided by [Albuquerque et al., 2020](https://github.com/rgalhos/gender-st-experiment).
 
 
 ## Overview
