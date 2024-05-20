@@ -1,6 +1,6 @@
 # Sublicense
 
-This software, is sublicensed by [Janne Rotter] under the following terms:
+This software, is sublicensed by Janne Rotter under the following terms:
 
 ## Original MIT License
 
