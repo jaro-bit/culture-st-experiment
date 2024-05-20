@@ -1,4 +1,8 @@
-MIT License
+# Sublicense
+
+This software, is sublicensed by [Janne Rotter] under the following terms:
+
+## Original MIT License
 
 Copyright (c) [2020] [Josmario Albuquerque]
 
@@ -20,4 +24,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-This software, [Your Software Name], is sublicensed by [Your Name] under the following terms:
+## Additional Terms by Janne Rotter (2024)
+
+1. Prohibition of Commercial Use: This software may not be used for any commercial purposes. Commercial use includes, but is not limited to, selling the software, using the software as part of a product or service that is sold, or using the software to generate revenue.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
